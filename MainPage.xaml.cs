@@ -22,9 +22,37 @@ namespace Arvestus_KarlAleksander_Sloog
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        int counter = 1;
+
         public MainPage()
         {
             this.InitializeComponent();
         }
+
+        private void Button1_Click(object sender, RoutedEventArgs e)
+        {
+            string username = "admin";
+            string password = "Passw0rd";
+
+            if (counter <= 3)
+            {
+                if (userBox.Text == username && passwordBox.Password == password)
+                {
+                    resultBlock.Text = "Sisselogimine õnnestus";
+                }
+
+                else
+                {
+                    resultBlock.Text = "Sisselogimine ebaõnnestus!";
+
+                    counter++;
+                }
+           }
+            else
+            {
+                resultBlock.Text = "Sisselogimine blokeeritud!";
+                button1.IsEnabled = false;
+            }
+        }   
     }
 }

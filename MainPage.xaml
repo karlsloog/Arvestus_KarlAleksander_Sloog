@@ -9,6 +9,61 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Column="2"
+                    Grid.Row="2"
+                    Grid.ColumnSpan="3"
+                    Padding="10">
+            
+            <TextBox Name="userBox"
+                     Margin="0,0,0,15"
+                     PlaceholderText="Kasutajanimi">
+
+            </TextBox>
+
+            <PasswordBox Name="passwordBox"
+                         PlaceholderText="Parool">
+
+            </PasswordBox>
+        </StackPanel>
+
+        <StackPanel Grid.Column="4"
+                    Grid.Row="3"
+                    HorizontalAlignment="Right"
+                    Padding="10"
+                    >
+            
+            <Button Name="button1"
+                    Content="Logi sisse"
+                    IsEnabled="True"
+                    Click="Button1_Click">
+
+            </Button>
+        </StackPanel>
+
+        <StackPanel Grid.Column="3"
+                    Grid.Row="3"
+                    Grid.ColumnSpan="2"
+                    Margin="10,50,0,0">
+            <TextBlock Name="resultBlock"></TextBlock>
+        </StackPanel>
     </Grid>
 </Page>
