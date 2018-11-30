@@ -28,19 +28,32 @@
             <RowDefinition Height="1*"></RowDefinition>
         </Grid.RowDefinitions>
 
+        <StackPanel Background="#FF63FFF1"
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    Grid.ColumnSpan="5"
+                    Grid.RowSpan="4" 
+                    BorderBrush="#FF0095EA" 
+                    BorderThickness="5,5,5,5">
+            
+        </StackPanel>
+
         <StackPanel Grid.Column="2"
                     Grid.Row="2"
                     Grid.ColumnSpan="3"
-                    Padding="10">
+                    Padding="10"
+                    >
             
             <TextBox Name="userBox"
                      Margin="0,0,0,15"
-                     PlaceholderText="Kasutajanimi">
+                     PlaceholderText="Kasutajanimi"
+                     FontSize="30">
 
             </TextBox>
 
             <PasswordBox Name="passwordBox"
-                         PlaceholderText="Parool">
+                         PlaceholderText="Parool"
+                         FontSize="30">
 
             </PasswordBox>
         </StackPanel>
@@ -54,7 +67,8 @@
             <Button Name="button1"
                     Content="Logi sisse"
                     IsEnabled="True"
-                    Click="Button1_Click">
+                    Click="Button1_Click"
+                    FontSize="20">
 
             </Button>
         </StackPanel>
@@ -63,7 +77,11 @@
                     Grid.Row="3"
                     Grid.ColumnSpan="2"
                     Margin="10,50,0,0">
-            <TextBlock Name="resultBlock"></TextBlock>
+            <TextBlock Name="resultBlock" 
+                       Foreground="Red"
+                       FontSize="25">
+                
+            </TextBlock>
         </StackPanel>
     </Grid>
 </Page>
