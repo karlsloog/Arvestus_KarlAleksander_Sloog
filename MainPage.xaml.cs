@@ -39,6 +39,7 @@ namespace Arvestus_KarlAleksander_Sloog
                 if (userBox.Text == username && passwordBox.Password == password)
                 {
                     resultBlock.Text = "Sisselogimine õnnestus";
+                    this.Frame.Navigate(typeof(Content));
                 }
 
                 else
