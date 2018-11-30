@@ -9,32 +9,61 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Pivot Background="#FF686868">
+        <Pivot Margin="10">
 
-                <PivotItem Header="Item1" Background="White" >
-                <StackPanel>
-                    <TextBlock>Content1</TextBlock>
-                </StackPanel>
+
+            <PivotItem>
+                <PivotItem.Header>
+                    <StackPanel>
+                        <SymbolIcon Symbol="Accept"></SymbolIcon>
+                        <TextBlock>Item1</TextBlock>
+                    </StackPanel>
+                </PivotItem.Header>
+                <PivotItem Margin="5"
+                           Background="LightGray">
+                    <TextBlock Margin="10">Content1</TextBlock>
+                </PivotItem>
+            </PivotItem>
+
+            <PivotItem>
+                <PivotItem.Header>
+                    <StackPanel>
+                        <SymbolIcon Symbol="FourBars"></SymbolIcon>
+                        <TextBlock>Item2</TextBlock>
+                    </StackPanel>
+                </PivotItem.Header>
+                <PivotItem Margin="5"
+                           Background="LightGray">
+                    <TextBlock Margin="10">Content2</TextBlock>
+                </PivotItem>
+            </PivotItem>
+
+            <PivotItem>
+                <PivotItem.Header>
+                    <StackPanel>
+                        <SymbolIcon Symbol="People"></SymbolIcon>
+                        <TextBlock>Item3</TextBlock>
+                    </StackPanel>
+                </PivotItem.Header>
+                <PivotItem Margin="5"
+                           Background="LightGray">
+                    <TextBlock Margin="10">Content3</TextBlock>
+                </PivotItem>
+            </PivotItem>
+
+            <PivotItem>
+                <PivotItem.Header>
+                    <StackPanel>
+                        <SymbolIcon Symbol="NewFolder"></SymbolIcon>
+                        <TextBlock>Item4</TextBlock>
+                    </StackPanel>
+                </PivotItem.Header>
+                <PivotItem Margin="5"
+                           Background="LightGray">
+                    <TextBlock Margin="10">Content4</TextBlock>
+                </PivotItem>
             </PivotItem>
             
-            <PivotItem Header="Item2">
-                <StackPanel>
-                    <TextBlock>Content2</TextBlock>
-                </StackPanel>
-            </PivotItem>
-            
-            <PivotItem Header="Item3">
-                <StackPanel>
-                    <TextBlock>Content3</TextBlock>
-                </StackPanel>
-            </PivotItem>
-
-            <PivotItem Header="Item4">
-                <StackPanel>
-                    <TextBlock>Content4</TextBlock>
-                </StackPanel>
-            </PivotItem>
-
         </Pivot>
     </Grid>
 </Page>
