@@ -31,8 +31,8 @@ namespace Arvestus_KarlAleksander_Sloog
 
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
-            string username = "admin";
-            string password = "Passw0rd";
+            string username = "user";
+            string password = "SecretPassword";
 
             if (counter <= 3)
             {
